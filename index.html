@@ -4,8 +4,165 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>bus tiket</title>
+    <!-- tailwind daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- custom css -->
+     <style>
+          .font-ralway{
+            font-family: "Raleway", sans-serif;
+          }
+          .font-inter{
+            font-family: "Inter", sans-serif;
+          }
+          .banner-section{
+            background-image: url(images/banner.png);
+          }
+     </style>
 </head>
-<body>
-    
+<body class="font-ralway">
+    <!-- header section -->
+    <header class=" lg:px-20" >
+        <!-- nav section -->
+        <nav class="container mx-auto  mt-14">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost lg:text-4xl text-2xl text-[#030712] font-extrabold ">P-Ticket</a>
+                </div>
+                <div class="navbar-center hidden lg:flex gap-14 list-none text-[#030712B2] text-lg font-medium">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Destination</li>
+                    <li>search</li>
+                </div>
+                <button class=" btn   bg-[#1DD10066] lg:px-8  text-xl font-bold text-[#1DD100] ml-16 lg:ml-40">
+                    Bus
+                    <img src="images/bus-icon.png" alt="">
+                </button>
+              </div>
+        </nav>
+        <!-- banner section -->
+        <section class="mt-9">
+            <div class="banner-section container mx-auto bg-no-repeat min-h-screen flex flex-col justify-center items-center ">
+                <h3 class="text-6xl text-[#FFFFFF] font-extrabold ">End-to-End Travel with</h3>
+                <h3 class="text-[#1DD100] text-6xl font-extrabold">P Paribahan</h3>
+                <p class="text-[#FFFFFF] text-lg font-normal w-1/2 text-center">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100] text-[#030712] rounded-xl text-lg border-none mt-8">Buy Tickets</button>
+            </div>
+            <!-- mini card -->
+            <div class="font-inter px-20 flex gap-10 -translate-y-40">
+                <div class="flex items-center gap-2 border rounded-3xl border-b-[#1DD100] p-10 bg-[white]">
+                    <div>
+                        <img src="images/people.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-4xl text-[#030712] font-bold">500K+</h3>
+                        <p class="text-[#03071299] text-lg font-normal">Registered users</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 border rounded-3xl border-b-[#1DD100] p-10 bg-[white]">
+                    <div>
+                        <img src="images/ticket-cupon.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-4xl text-[#030712] font-bold">1.7 lacks</h3>
+                        <p class="text-[#03071299] text-lg font-normal">Tickets sold</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 border rounded-3xl border-b-[#1DD100] p-10 bg-[white]">
+                    <div>
+                        <img src="images/stoppage.png" alt="">
+                    </div>
+                    <div>
+                        <h3 class="text-4xl text-[#030712] font-bold">80K+</h3>
+                        <p class="text-[#03071299] text-lg font-normal">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- main section -->
+    <main>
+        <!-- offer section -->
+        <section class="container mx-auto lg:px-20 ">
+            <div class="font-inter text-center space-y-12">
+                <h3 class="text-[#030712] text-4xl font-bold">Best offers for you</h3>
+                <div class="flex gap-6 ">
+                    <div class="bg-[#FFBF0F] flex w-full rounded-3xl">
+                        <div class="flex flex-col justify-center items-center p-12">
+                            <h5 class="text-4xl font-black text-[#030712CC]">15% OFF</h5>
+                            <p class="text-xl text-[#030712CC] font-semibold">on your next purchase </p>
+                            <p class="text-lg text-[#03071280] font-medium">use by January 2024</p>
+                        </div>
+                        <div>
+                            <img class="h-full" src="images/cupon-devider.png" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center items-center p-12">
+                            <h5 class="text-4xl font-black text-[#030712CC]">NEW15</h5>
+                            <p class="text-lg text-[#03071280] font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#F78C9C] flex w-full rounded-3xl">
+                        <div class="flex flex-col justify-center items-center p-12">
+                            <h5 class="text-4xl font-black text-[#030712CC]">20% OFF</h5>
+                            <p class="text-xl text-[#030712CC] font-semibold">on your next purchase </p>
+                            <p class="text-lg text-[#03071280] font-medium">use by January 2024</p>
+                        </div>
+                        <div>
+                            <img class="h-full" src="images/cupon-devider.png" alt="">
+                        </div>
+                        <div class="flex flex-col justify-center items-center p-12">
+                            <h5 class="text-4xl font-black text-[#030712CC]">Couple 20</h5>
+                            <p class="text-lg text-[#03071280] font-medium">Coupon Code</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+                <button class="btn text-[#1DD100] border-[#1DD100]">See All Offers</button>
+            </div>
+        </section>
+    </main>
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 </body>
 </html>
