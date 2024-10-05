@@ -25,6 +25,9 @@
           .banner-section{
             background-image: url(images/banner.png);
           }
+          .btn{
+            width: 7rem;
+          }
 
      </style>
 </head>
@@ -178,9 +181,9 @@
                                 <p class="text-lg text-[#03071299] font-normal">Coach-009-WEB ! AC_Business</p>
                             </div>
                         </div>
-                        <button class="btn font-inter text-lg text-[#1DD100] font-medium bg-[#1DD10026]">
+                        <button class="btn flex font-inter text-lg text-[#1DD100] font-medium bg-[#1DD10026]">
                             <img src="images/seat-green.png" alt="">
-                            40 Seats left
+                            <p>40 Seats left</p>
                         </button>
                     </div>
                     <!-- destination div -->
@@ -195,8 +198,8 @@
                             <p class="text-[#030712]">9:00 PM</p>
                         </div>
                         <hr>
-                        <div class="flex justify-around ">
-                            <button class="btn bg-[#0307120D]">Boarding Point - Laxmipur</button>
+                        <div class="flex justify-between ">
+                            <button class="btn p bg-[#0307120D]">Boarding Point - Laxmipur</button>
                             <button class="btn bg-[#0307120D]">Dropping Point - Bogura</button>
                             <button class="btn bg-[#0307120D]">Est. Time - 11 Hour</button>
                         </div>
@@ -215,12 +218,12 @@
                 </div>
             </div>
             <!-- tiket and site section -->
-             <div class="mt-6 bg-[#FFFFFF] p-8 rounded-3xl flex justify-between">
-                <!-- site -->
-                <div class="space-y-6">
+             <div class=" grid grid-cols-12   mt-6 bg-[#FFFFFF] p-8 rounded-3xl gap-8">
+                <!-- seat section -->
+                <div class="space-y-6 col-span-7  ">
                     <h3 class="text-2xl text-[#030712] font-semibold">Select Your Seat</h3>
                     <hr>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between ">
                         <p class="flex text-lg text-[#03071280] font-medium">
                             <img src="images/seat-gray.png" alt="">
                             Available
@@ -295,14 +298,13 @@
                         </div>
                     </div>
                 </div>
-                <hr>
                 <!-- tiket description section -->
-                <div class="p-8">
+                <div class="p-8 col-span-5 border-l">
                     <h3 class="text-2xl text-[#030712] font-semibold">Select Your Seat</h3>
                     <hr>
                     <!-- table section -->
-                    <div class="bg-[#F7F8F8] font-inter rounded-xl>
-                        <div class="overflow-x-auto">
+                    <div class="bg-[#F7F8F8] font-inter rounded-xl mt-8">
+                        <div class="">
                             <table class="table ">
                               <!-- head -->
                               <thead>
@@ -339,7 +341,7 @@
                             <input type="text" placeholder="Have any copupon?" class="input input-bordered w-full max-w-xs rounded-r-none " />
                              <button class="btn bg-[#1DD100] text-[#FFFFFF] rounded-l-none">Apply</button>
                           </div>
-                          <div class="text-base text-[#030712] font-medium flex justify-between p-8">
+                          <div class="text-base text-[#030712] font-medium flex justify-between  p-8">
                             <p>Grand Total</p>
                             <p>BDT 1100</p>
                           </div>
@@ -352,8 +354,8 @@
                         <input type="number" placeholder="Enter your phone number" class="input input-bordered w-full" />
                         <p>Email ID</p>
                         <input type="email" placeholder="Enter your email id" class="input input-bordered w-full " />
-                        <button class="btn bg-[#1DD100] w-3/4 w-full">Next</button>
-                        <div class="flex text-base text-[#03071299] font-normal gap-10">
+                        <button class="btn bg-[#1DD100]  w-full">Next</button>
+                        <div class="flex justify-between text-base text-[#03071299] font-normal gap-10">
                             <a href="">Terms and Conditions</a>
                             <a href="">Cancellation Policy</a>
                         </div>
