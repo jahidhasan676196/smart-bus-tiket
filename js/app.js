@@ -5,11 +5,12 @@ for(seat of seatClass){
         const targetText= e.target
         const addBgColor=targetText.classList.add('bg-[#1DD100]');
         // const addDisabled=targetText.classList.add('');
+        
       // update tiket
         const totalTiket =getCovertedValue('current-seat')
         const currentTiket=totalTiket-1;
         addedTheValueById('current-seat',currentTiket)
-
+       
       // add card
       const name =e.target.innerText
       const price =getCovertedValue('per-tiket')
@@ -28,6 +29,8 @@ for(seat of seatClass){
       createDiv.appendChild(p2)
       createDiv.appendChild(p3)
       addDiv.appendChild(createDiv)
+     
+      
       // total price
      const perTiket =getCovertedValue('per-tiket')
      const totalPriceValue =getCovertedValue('total-price')
@@ -35,14 +38,9 @@ for(seat of seatClass){
      addedTheValueById('total-price',totalPrice)
 
     //  grand total
-    // const copunValue =getVaule(totalPrice)
     calculateGrandTotal(totalPrice)
-    // addedTheValueById('grand-total',copunValue)
     })
 }
-addedTheValueById('total-price',total)
-
-// utility function
 
 // converted value
 function getCovertedValue(id){
@@ -58,24 +56,31 @@ function addedTheValueById(id,value){
     const numberValue =parseInt(value)
     getId.innerText=numberValue;
 }
-// copun input field
-// function getVaule(totalPrice){
-//  const v = document.getElementById('copun-feld').value
-//  if(v.toUpperCase() =='NEW15'.toUpperCase()){
-//   const grandTotal1 =totalPrice-15*100;
-//   return grandTotal1;
-// }
-// else if(v.toUpperCase() == 'Couple 20'.toUpperCase()){
-//   const grandTota2=totalPrice-20*100;
-//   return grandTota2;
-// }
 
-// }
 // grand total
 function calculateGrandTotal(totalPrice){
-const grandValue = document.getElementById('grand-total').innerText=totalPrice;
-// const grandValueNumber=parseInt(grandValue)
-// const granTotal =grandValueNumber+totalPrice;
-// document.getElementById('grand-total').innerText=granTotal
+ const value= document.getElementById('grand-total').innerText=totalPrice;
 }
+// copun input field
+function getVaule(v){
+ const total= document.getElementById('grand-total').innerText
+ const tatalVale =parseInt(total)
+  const copunValue = document.getElementById('copun-feld').value
+   if(copunValue=='NEW15'){
+    const newvalue =tatalVale-tatalVale*15/100;
+    document.getElementById('grand-total').innerText=newvalue;
+   }
+   
+   else if(copunValue=='COUPLE20'){
+    const newvalue2 =tatalVale-tatalVale*20/100;
+    document.getElementById('grand-total').innerText=newvalue2;
+   }
+   
+ }
+
+
+
+ const phoneValue =document.getElementById('phn-number')
+ const phonetext=phoneValue.innerText
+console.log(phonetext)
 
